@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image upload</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="greenScreen.js"></script>
+        <script src="imageFilters.js"></script>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    </head>
+    <body>
+        <h1>Upload your image</h1>
+        <canvas id="can1" class="canvas"></canvas>
+        <canvas id="can2" class="canvas"></canvas> 
+        <canvas id="resultCan"></canvas>
+        <br>
+        Select a foreground image: <input type="file" id="fgImage" multipe="false" accept="image/*" onchange="loadForegroundImage()">
+        Select a background image: <input type="file" id="bgImage" multipe="false" accept="image/*" onchange="loadBackgroundImage()">              
+        <input type="button" id="clear" value="Clear canvases" onClick="reset()">
+        <input type="button" id="composite" value="Merge images" onClick="showResult()">
+        <br>
+        <h2>Filters</h2>
+        <canvas id="canFilter" class="canvasFilter"></canvas><br>
+        Select an image: <input type="file" id="filterImage" multipe="false" accept="image/*" onchange="loadFilterImage()">
+        <br>
+        <input type="button" id="makeGraybtn" value="Grayscale" onClick="makeGray()">
+        <input type="button" id="makeRedbtn" value="Red" onClick="makeRed()">
+        <input type="button" id="makeSepiabtn" value="Sepia" onClick="makeSepia()">
+        <input type="button" id="framebtn" value="Apply frame" onClick="makeFrame()">
+        <br>
+        <input type="button" id="resetFilterbtn" value="Revert filter" onClick="resetFilter()">
+    </body>
+</html>

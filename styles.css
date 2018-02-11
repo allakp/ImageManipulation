@@ -1,0 +1,22 @@
+.canvas{
+    border: 1px solid lightgrey;
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.canvasFilter
+{
+    border: 1px solid lightgrey;
+    margin: 10px;
+    height: 500px;
+    width: 700px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    margin: 10px;
+}
